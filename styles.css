@@ -330,17 +330,23 @@
 }
 
 
-.Images{
+.Images {
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;  
+    gap: 20px;         
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.Images img{
+.Images img {
+    max-width: 100%;  
+    height: auto;     
     border: 2px solid rgb(126, 13, 13);
+    border-radius: 8px; 
+    flex: 1 1 200px;   
 }
-/* Hover effect tetap ada */
+
+
 .skill-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 50px rgba(220, 38, 38, 0.2);
